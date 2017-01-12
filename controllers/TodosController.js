@@ -92,7 +92,7 @@ class TodosController {
                     throw new Error("Todo does not exist");
                 } else {
                     const editTodo = new Todo(req.body);
-                    return todos.createNew(editTodo);
+                    return todos.editExistingTodoBy(editTodo);
                 }
             })
             .then(() => {
