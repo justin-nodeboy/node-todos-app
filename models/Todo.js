@@ -34,7 +34,7 @@ class Todo {
         } else if (!obj.due instanceof Date){
             throw new Error("The due must be a date");
         } else {
-            this.due = obj.due;
+            this.due = new Date(obj.due);
         }
 
         this.createdDate = obj.createdDate || new Date();
