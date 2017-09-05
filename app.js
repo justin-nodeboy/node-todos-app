@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const MongoClient = require("./MongoClient");
 const app = module.exports = express();
 
-//This sets up some middlewear
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

@@ -5,7 +5,6 @@ const express = require('express');
 const router = express.Router();
 const Todos = require("../controllers/TodosController");
 
-//This is the todos route
 router.route('/todos')
     .get(Todos.getAllToDos)
     .post(Todos.createToDo);
